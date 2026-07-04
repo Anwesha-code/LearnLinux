@@ -18,6 +18,7 @@ The goal is to build a beginner-friendly Linux reference that anyone can underst
 ## 📄 Current Notes
 
 - ✅ Linux Basics Cheat Sheet
+- ✅ Basic Networking Commands 
 
 
 
