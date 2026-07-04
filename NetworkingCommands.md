@@ -2,7 +2,6 @@
 
 > A quick reference for the most commonly used Linux networking commands.
 
-
 ---
 
 # 📚 Command Categories
@@ -55,7 +54,7 @@
 | Command | Purpose |
 |----------|---------|
 | `arp` | View or modify the ARP cache |
-| `ip neigh` | View neighbor table (modern replacement for arp) |
+| `ip neigh` | View neighbor table (modern replacement for `arp`) |
 
 ---
 
@@ -63,7 +62,7 @@
 
 | Command | Purpose |
 |----------|---------|
-| `ss` | Display socket statistics (modern replacement for netstat) |
+| `ss` | Display socket statistics (modern replacement for `netstat`) |
 | `netstat` | Display network connections and routing information |
 | `lsof -i` | Show processes using network ports |
 
@@ -89,23 +88,24 @@
 
 ---
 
-## 🔍 Port Scanning & Diagnostics
+## 🔍 Port Scanning & Enumeration
 
 | Command | Purpose |
 |----------|---------|
-| `nmap` | Discover hosts and scan ports |
+| `nmap` | Discover hosts, scan ports, detect services and OS |
 | `nc` (Netcat) | TCP/UDP connections, debugging, file transfer |
 | `telnet` | Test TCP connectivity (legacy) |
+| `dirb` | Discover hidden web directories and files using wordlists |
 
 ---
 
-## 📦 Packet Capture & Analysis
+## 📦 Packet Capture & Traffic Analysis
 
 | Command | Purpose |
 |----------|---------|
-| `tcpdump` | Capture packets from the command line |
-| `tshark` | Command-line Wireshark |
-| `Wireshark` | GUI packet analyzer |
+| `tcpdump` | Capture and inspect network packets from the command line |
+| `tshark` | Command-line version of Wireshark |
+| `Wireshark` | GUI packet analyzer for detailed packet inspection |
 
 ---
 
@@ -114,7 +114,7 @@
 | Command | Purpose |
 |----------|---------|
 | `iptables` | Linux firewall management |
-| `nft` | Modern replacement for iptables |
+| `nft` | Modern replacement for `iptables` |
 | `ufw` | Simple firewall frontend |
 
 ---
@@ -123,19 +123,19 @@
 
 | Command | Purpose |
 |----------|---------|
-| `systemctl` | Manage networking services |
+| `systemctl` | Manage networking-related services |
 | `service` | Legacy service manager |
 
 ---
 
-## 📊 Monitoring
+## 📊 Network Monitoring
 
 | Command | Purpose |
 |----------|---------|
-| `iftop` | Live bandwidth usage |
+| `iftop` | Live bandwidth usage by connection |
 | `bmon` | Bandwidth monitor |
-| `iperf3` | Network throughput testing |
-| `vnstat` | Traffic statistics |
+| `iperf3` | Measure network throughput |
+| `vnstat` | Network traffic statistics |
 | `sar -n` | Network performance statistics |
 
 ---
@@ -151,18 +151,19 @@ If you're just starting Linux networking, learn these first:
 | ⭐⭐⭐ | `ss` | Active TCP/UDP connections |
 | ⭐⭐⭐ | `dig` | DNS troubleshooting |
 | ⭐⭐⭐ | `traceroute` | Trace packet path |
-| ⭐⭐⭐ | `ssh` | Remote login |
-| ⭐⭐⭐ | `scp` | Secure file transfer |
 | ⭐⭐⭐ | `curl` | HTTP requests & API testing |
-| ⭐⭐⭐ | `nmap` | Port scanning |
-| ⭐⭐⭐ | `tcpdump` | Packet capture |
-| ⭐⭐⭐ | `iptables` | Firewall |
-| ⭐⭐ | `ip neigh` | ARP / neighbor table |
+| ⭐⭐⭐ | `ssh` | Secure remote login |
+| ⭐⭐⭐ | `scp` | Secure file transfer |
+| ⭐⭐⭐ | `nmap` | Port and service scanning |
+| ⭐⭐⭐ | `tcpdump` | Capture and analyze packets |
+| ⭐⭐⭐ | `iptables` | Configure firewall rules |
+| ⭐⭐⭐ | `Wireshark` | GUI packet analysis |
+| ⭐⭐ | `ip neigh` | View ARP/neighbor table |
 | ⭐⭐ | `route` | Legacy routing |
 | ⭐⭐ | `netstat` | Legacy socket information |
-| ⭐⭐ | `wget` | File downloads |
-| ⭐⭐ | `mtr` | Network diagnostics |
-| ⭐⭐ | `Wireshark` | Packet analysis |
+| ⭐⭐ | `wget` | Download files |
+| ⭐⭐ | `mtr` | Advanced network diagnostics |
+| ⭐⭐ | `dirb` | Web directory enumeration |
 
 ---
 
@@ -205,9 +206,11 @@ If you're just starting Linux networking, learn these first:
 12. Wireshark
 13. `iptables`
 14. `ufw`
-15. Network Troubleshooting
+15. `dirb`
+16. Network Troubleshooting
 
 ---
+
 
 # Author
 
