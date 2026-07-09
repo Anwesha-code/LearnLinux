@@ -450,58 +450,6 @@ to terminate the script.
 
 ---
 
-# Common Bash Mistakes
-
-When writing shell scripts, these are very common mistakes.
-
-## Incorrect Shebang
-
-❌
-
-```bash
-#!bin/bash
-```
-
-✅
-
-```bash
-#!/bin/bash
-```
-
----
-
-## Spaces Around '='
-
-Bash variable assignments **must not contain spaces**.
-
-❌
-
-```bash
-INTERFACE = "your_interface"
-INTERVAL = 300
-```
-
-✅
-
-```bash
-INTERFACE="your_interface"
-INTERVAL=300
-```
-
----
-
-## Incorrect Interface Name
-
-Always verify the interface name before using it.
-
-```bash
-ip link
-```
-
-Then use the exact interface name returned by the command.
-
----
-
 # Understanding the Script
 
 ```bash
